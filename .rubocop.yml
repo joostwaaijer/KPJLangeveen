@@ -1,0 +1,52 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  Include:
+    - Gemfile
+    - Rakefile
+    - config.ru
+    - lib/tasks/*
+  Exclude:
+    - db/schema.rb
+    - bin/*
+    - lib/templates/**/*
+    - node_modules/**/*
+Layout/DotPosition:
+  EnforcedStyle: leading
+Metrics/AbcSize:
+  Max: 30
+  Exclude:
+    - db/migrate/*
+Metrics/BlockLength:
+ Exclude:
+   - app/models/concerns/*
+   - config/**/*
+   - lib/tasks/*
+   - spec/**/*
+   - db/migrate/*
+Metrics/ClassLength:
+  Max: 200
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - config/initializers/devise.rb
+    - db/migrate/*
+Metrics/MethodLength:
+  Max: 30
+  Exclude:
+    - db/migrate/*
+Metrics/ModuleLength:
+  Max: 200
+Style/Documentation:
+  Enabled: false
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+Style/FormatStringToken:
+  Enabled: false
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
+Lint/AmbiguousBlockAssociation:
+  Enabled: false

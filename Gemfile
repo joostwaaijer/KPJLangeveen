@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # manually added gems
+gem 'devise'
+gem 'jquery-rails'
 gem 'materialize-sass'
 
 group :development, :test do
